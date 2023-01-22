@@ -8,11 +8,22 @@ $(function () {
 
     // 参加人数分の氏名欄を生成
     $('#form-number').click(function () {
-        $('#form-name').empty();
-        var num = $('input[name="number"]:checked').val();
+        $('#form-number').empty();
+        var num = $('input[number="number"]:checked').val();
         for (i = 0; i < num; i++) {
-            $('#form-name').append(
-                `<input class="form-control w-100 mt-1" name="name" maxlength="2">`
+            $('#form-number').append(
+                `<input class="form-control w-100 mt-1" name="number" maxlength="2">`
+            );
+        }
+    });
+    
+        // 参加人数分の氏名欄を生成
+    $('#form-num').click(function () {
+        $('#form-num').empty();
+        var num = $('input[num="num"]:checked').val();
+        for (i = 0; i < num; i++) {
+            $('#form-num').append(
+                `<input class="form-control w-100 mt-1" name="num" maxlength="2">`
             );
         }
     });
