@@ -10,7 +10,7 @@ $(function () {
     $('#form-number').click(function () {
         $('#form-number').empty();
         var num = $('input[number="number"]:checked').val();
-        for (i = 0; i < num; i++) {
+        for (i = 0; i < number; i++) {
             $('#form-number').append(
                 `<input class="form-control w-100 mt-1" name="number" maxlength="2">`
             );
