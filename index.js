@@ -12,7 +12,7 @@ $(function () {
         var num = $('input[number="number"]:checked').val();
         for (i = 0; i < number; i++) {
             $('#form-number').append(
-                `<input class="form-control w-100 mt-1" name="number" maxlength="2">`
+                `<input class="form-control w-100 mt-1" name="number" maxlength="1">`
             );
         }
     });
@@ -23,7 +23,7 @@ $(function () {
         var num = $('input[num="num"]:checked').val();
         for (i = 0; i < num; i++) {
             $('#form-num').append(
-                `<input class="form-control w-100 mt-1" name="num" maxlength="2">`
+                `<input class="form-control w-100 mt-2" name="num" maxlength="2">`
             );
         }
     });
