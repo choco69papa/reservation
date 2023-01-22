@@ -7,6 +7,7 @@ $(function () {
     });
 
     // 参加人数分の氏名欄を生成
+    ```
     $('#form-number').click(function () {
         $('#form-number').empty();
         var num = $('input[number="number"]:checked').val();
@@ -16,7 +17,7 @@ $(function () {
             );
         }
     });
-    
+    ```
         // 参加人数分の氏名欄を生成
     $('#form-num').click(function () {
         $('#form-num').empty();
