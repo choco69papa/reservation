@@ -6,27 +6,17 @@ $(function () {
         });
     });
 
+    
+    
     // 参加人数分の氏名欄を生成
-
     $('#form-number').click(function () {
         $('#form-name').empty();
         var num = $('input[name="number"]:checked').val();
-        for (i = 0; i < number; i++) {
+        for (i = 0; i < num; i++) {
             $('#form-name').append(
-                `<input class="form-control w-100 mt-1" name="number" maxlength="1">`
+                `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
             );
         }
-    });
-
-    
-    
-            // 参加人数分の氏名欄を生成
-    $('#form-num').click(function () {
-    $('#btn').click(function() {
-      var v = $('[name=num] option:selected').text();
-      alert(v);
-                `<input class="form-control w-100 mt-2" name="num" maxlength="2">`
-  });
     });
     
    
@@ -43,7 +33,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `希望日：${date}\n時間：${num}\nメニュー：${names}`;
+        var msg = `希望日：${date}\n時間：${number\nメニュー：${names}`;
         sendText(msg);
 
         return false;
