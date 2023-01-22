@@ -20,15 +20,16 @@ $(function () {
 
     
     
-    
-  $(function(){
-    $('#btn').click(function() {
-      var v = $('[name=name1] option:selected').text();
-      alert(v);
+            // 参加人数分の氏名欄を生成
+    $('#form-num').click(function () {
+        $('#form-num').empty();
+        var num = $('input[num="num"]:checked').val();
+        for (i = 0; i < num; i++) {
+            $('#form-num').append(
+                `<input class="form-control w-100 mt-2" name="num" maxlength="2">`
+            );
+        }
     });
-  });
-    
-    
     
 
     // 送信
