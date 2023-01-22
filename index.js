@@ -9,10 +9,10 @@ $(function () {
     // 参加人数分の氏名欄を生成
 
     $('#form-number').click(function () {
-        $('#form-number').empty();
-        var num = $('input[number="number"]:checked').val();
+        $('#form-name').empty();
+        var num = $('input[name="number"]:checked').val();
         for (i = 0; i < number; i++) {
-            $('#form-number').append(
+            $('#form-name').append(
                 `<input class="form-control w-100 mt-1" name="number" maxlength="1">`
             );
         }
@@ -23,9 +23,9 @@ $(function () {
             // 参加人数分の氏名欄を生成
     $('#form-num').click(function () {
         $('#form-num').empty();
-        var num = $('input[num="num"]:checked').val();
+        var num = $('input[name="num"]:checked').val();
         for (i = 0; i < num; i++) {
-            $('#form-num').append(
+            $('#form-name').append(
                 `<input class="form-control w-100 mt-2" name="num" maxlength="2">`
             );
         }
@@ -42,7 +42,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `希望日：${date}\n時間：${name1}\nメニュー：${names}`;
+        var msg = `希望日：${date}\n時間：${num}\nメニュー：${names}`;
         sendText(msg);
 
         return false;
