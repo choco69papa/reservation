@@ -23,7 +23,7 @@ $(function () {
             // 参加人数分の氏名欄を生成
     $('#form-num').click(function () {
     $('#btn').click(function() {
-      var v = $('[name=name1] option:selected').text();
+      var v = $('[name=num] option:selected').text();
       alert(v);
                 `<input class="form-control w-100 mt-2" name="num" maxlength="2">`
   });
