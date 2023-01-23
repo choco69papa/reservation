@@ -9,7 +9,6 @@ $(function () {
 
       $(function(){
     $('#form-number').click(function() {
-      var number = $('[name=number]').val();
       alert(v);
     });
   });
