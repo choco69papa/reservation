@@ -38,7 +38,7 @@ $(function() {
         var numbes = $('input[name="numbes"]:checked').val();
 
 
-        var msg = `希望日：${date}\n人数：${number}\n氏名：${numbes}`;
+        var msg = `希望日：${date}\n人数：${val}\n氏名：${val2}`;
         sendText(msg);
 
         return false;
