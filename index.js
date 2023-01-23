@@ -14,10 +14,11 @@ $('#number').change(function() {
 })
 
 $(function(){
-$('#names').click(function(){
-        var text = $('.menu').val();
-        alert(text);
-    });
+$('#number').change(function() {
+    var r = $('option:selected').val();
+    
+    console.log(r);
+})
 });
 
     // 送信
