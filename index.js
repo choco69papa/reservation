@@ -16,6 +16,18 @@ $(function () {
             );
         }
     });
+    
+    
+    
+      $(function(){
+    $('#btn').click(function() {
+      var v = $('[name=name1]').val();
+      alert(v);
+    });
+  });
+    
+    
+    
 
     // 送信
     $('form').submit(function () {
@@ -27,7 +39,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}`;
+        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}\n名：${name1}`;
         sendText(msg);
 
         return false;
