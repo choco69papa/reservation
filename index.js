@@ -7,14 +7,14 @@ $(function () {
     });
 
 
-    
-    
-    
-    // 参加人数分の氏名欄を生成
-    $('#form-number').click(function () {
-        $('#form-name').empty();
-        var num = $('input[name="number"]:checked').val();
+      $(function(){
+    $('#form-number').click(function() {
+      var number = $('[name=number]').val();
+      alert(v);
     });
+  });
+    
+
     
 
         // 参加人数分の氏名欄を生成
