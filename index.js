@@ -7,12 +7,11 @@ $(function () {
     });
 
     // 参加人数分の氏名欄を生成
-$(function(){
-$('#number').click(function(){
-        var text = $('.times').val();
-        alert(text);
-    });
-});
+$('#number').change(function() {
+    var r = $('option:selected').val();
+    
+    console.log(r);
+})
 
 $(function(){
 $('#names').click(function(){
