@@ -7,35 +7,26 @@ $(function () {
     });
 
 
-$(function() {
-  var $children = $('.children');
-  var original = $children.html();
-
-  $('.parent').change(function() {
-    var val1 = $(this).val();
-
-    $children.html(original).find('option').each(function() {
-      var val2 = $(this).data('val');
-      if (val1 != val2) {
-        $(this).not('optgroup,.msg').remove();
-      }
+    // 参加人数分の氏名欄を生成
+    $('#form-number').click(function () {
+        $('#form-name').empty();
+        var num = $('input[name="number"]:checked').val();
+        for (i = 0; i < num; i++) {
+            $('#form-name').append(
+                `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
+            );
+        }
     });
-
-    if ($(this).val() === '') {
-      $children.attr('disabled', 'disabled');
-    } else {
-      $children.removeAttr('disabled');
-    }
-
-  });
-});
-    
 
     // 送信
     $('form').submit(function () {
         var date = $('input[name="date"]').val();
         var number = $('input[name="number"]:checked').val();
-        var numbes = $('input[name="numbes"]:checked').val();
+        var names = '';
+        $('#form-name').children().each(function (i, elm) {
+            names += $(elm).val() + '、';
+        })
+        names = names.slice(0, -1);
 
 
         var msg = `希望日：${date}\n人数：${val}\n氏名：${val2}`;
