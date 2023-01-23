@@ -8,14 +8,14 @@ $(function () {
 
     // 参加人数分の氏名欄を生成
 $(function(){
-$('#form-number').click(function(){
+$('#number').click(function(){
         var text = $('.number').val();
         alert(text);
     });
 });
 
 $(function(){
-$('#form-number').click(function(){
+$('#names').click(function(){
         var text = $('.names').val();
         alert(text);
     });
