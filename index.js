@@ -7,8 +7,8 @@ $(function () {
     });
 
     // 参加人数分の氏名欄を生成
-    $('#form-number').click(function () {
-        $('#form-name').empty();
+    $('#form-control').click(function () {
+        $('#form-control').empty();
         var num = $('input[name="number"]:checked').val();
         for (i = 0; i < num; i++) {
             $('#form-name').append(
