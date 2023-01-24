@@ -12,7 +12,7 @@ $(function () {
         var num = $('input[name="number"]:checked').val();
         var minute = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
-        var names = $('input[name="inquiries"]').val();
+        var inquiries = $('input[name="inquiries"]').val();
     });
 
     // 送信
@@ -21,9 +21,9 @@ $(function () {
         var number = $('input[name="number"]:checked').val();
         var minute = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
-        var names = $('input[name="inquiries"]').val();
+        var inquiries = $('input[name="inquiries"]').val();
 
-        var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}\nメニュー：${inquiries}`;
+        var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}\n問い合わせ内容：${inquiries}`;
         sendText(msg);
 
         return false;
