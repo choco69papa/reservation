@@ -21,7 +21,7 @@ $(function () {
         var minute = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
 
-        var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}\n予約状況を確認次第、ご連絡します。`;
+        var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}`;
         sendText(msg);
 
         return false;
