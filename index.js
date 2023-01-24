@@ -8,7 +8,7 @@ $(function () {
 
     // 参加人数分の氏名欄を生成
     $('#form-number').click(function () {
-        $('#form-control').empty();
+        $('#form-number').empty();
         var num = $('select[name="number"]').val();
         for (i = 0; i < num; i++) {
             $('#form-name').append(
