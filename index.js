@@ -10,17 +10,7 @@ $(function () {
             showOtherMonths: true,
     // 当月・翌月・翌々月を表示させる
             numberOfMonths:3,
-    // 月曜日を選択できなくする
-	beforeShowDay: function (date) {
-          
-        if (date.getDay() == 1) {
-            // 日曜日
-            return [false, 'ui-state-disabled'];
-        } else {
-            // 平日
-            return [true, ''];
-        }
-    }		
+	
         });
     });
 
