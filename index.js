@@ -4,11 +4,21 @@ $(function () {
         $('input[name="date"]').datepicker({
             dateFormat: 'yy年mm月dd日',
             minDate: 0
-                    $( "#datepicker" ).datepicker('option','beforeShowDay',function(date){
-    var ret = [(date.getDay() != 1 && date.getDay() != 6)];
-    return ret;
-});
+            showOtherMonths: true
         });
+$('.datepicker').datepicker({
+	beforeShowDay: function (date) {
+          
+        if (date.getDay() == 1) {
+            // 日曜日
+            return [false, 'ui-state-disabled'];
+        } else {
+            // 平日
+            return [true, ''];
+        }
+    }
+          
+});
     });
 
     // 参加人数分の氏名欄を生成
