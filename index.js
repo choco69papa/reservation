@@ -9,7 +9,7 @@ $(function () {
     // 参加人数分の氏名欄を生成
     $('#form-control').click(function () {
         $('#form-control').empty();
-        var num = $('input[name="number"]:checked').val();
+        var num = $('select[name="number"]').val();
         for (i = 0; i < num; i++) {
             $('#form-name').append(
                 `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
