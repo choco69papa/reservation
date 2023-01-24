@@ -4,16 +4,10 @@ $(function () {
         $('input[name="date"]').datepicker({
             dateFormat: 'yy/mm/dd',
             minDate: 0
-                beforeShowDay: function(date) {
-        if(date.getDay() == 1 || date.getDay() == 6) {
-            // 月曜日は非表示
-            return [false, 'ui-state-disabled'];
-        }
-        else {
-            // 平日
-            return [true, ''];
-        }
-    }
+$( "#datepicker" ).datepicker('option','beforeShowDay',function(date){
+    var ret = [(date.getDay() != 1 && date.getDay() != 6)];
+    return ret;
+});
         });
     });
 
