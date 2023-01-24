@@ -16,7 +16,17 @@ $(function () {
             );
         }
     });
+    
+    
+    
+    document.querySelector('select[name="number"]').form.
+    addEventLisetner('formdata', e => {
+  if (e.formData.get('number') == '')
+    e.formData.delete('number');
+});
 
+    
+    
     // 送信
     $('form').submit(function () {
         var date = $('input[name="date"]').val();
