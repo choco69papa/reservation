@@ -5,6 +5,10 @@ $(function () {
             dateFormat: 'yy年mm月dd日',
             minDate: 0
         });
+        $( "#datepicker" ).datepicker('option','beforeShowDay',function(date){
+    var ret = [(date.getDay() != 0 && date.getDay() != 6)];
+    return ret;
+});
     });
 
     // 参加人数分の氏名欄を生成
