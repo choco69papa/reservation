@@ -22,8 +22,8 @@ $(function () {
     // 送信
     $('form').submit(function () {
         var date = $('input[name="date"]').val();
-        var number = $('input[name="number"]:checked').val();
-        var names = $('input[name="names"]:checked').val();
+        var number = $('input[name="number"] option:selected').val();
+        var names = $('input[name="names"] option:selected').val();
         names = names.slice(0, -1);
         
         var msg = `希望日：${date}\n人数：${number}\n氏名：${names}`;
