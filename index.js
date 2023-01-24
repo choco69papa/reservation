@@ -9,6 +9,11 @@ $(function () {
             // 月曜日は非表示
             return [false, 'ui-state-disabled'];
         }
+        else {
+            // 平日
+            return [true, ''];
+        }
+    }
         });
     });
 
