@@ -19,7 +19,7 @@ $(function () {
         var number = $('input[name="number"]:checked').val();
         var names = $('select[name="names"]').val();
 
-        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}\n氏名：${sukuwat}`;
+        var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}`;
         sendText(msg);
 
         return false;
