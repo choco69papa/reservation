@@ -10,6 +10,7 @@ $(function () {
     $('#form-number').click(function () {
         $('#form-name').empty();
         var num = $('input[name="number"]:checked').val();
+        var names = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
     });
 
@@ -17,6 +18,7 @@ $(function () {
     $('form').submit(function () {
         var date = $('input[name="date"]').val();
         var number = $('input[name="number"]:checked').val();
+        var names = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
 
         var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}`;
