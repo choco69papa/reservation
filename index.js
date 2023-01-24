@@ -1,11 +1,12 @@
 $(function () {
+	
     // カレンダー
     $(function () {
         $('input[name="date"]').datepicker({
             dateFormat: 'yy年mm月dd日',
-    // カレンダー
+    // 昨日の日付以降を選択できなくする
             minDate: 0
-    // カレンダー
+    // 当月カレンダーに先月、翌月の日付を表示させる
             showOtherMonths: true
         });
     });
@@ -24,7 +25,7 @@ $('.datepicker').datepicker({
           
 });
 
-    // 参加人数分の氏名欄を生成
+    // 予約フォームを表示する
     $('#form-number').click(function () {
         $('#form-name').empty();
         var date = $('input[name="date"]').val();
