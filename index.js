@@ -5,11 +5,7 @@ $(function () {
         $('input[name="date"]').datepicker({
             dateFormat: 'yy年mm月dd日',
     // 昨日の日付以降を選択できなくする
-            minDate:0,
-    // 当月カレンダーに先月、翌月の日付を表示させる
-            showOtherMonths: true,
-    // 当月・翌月・翌々月を表示させる
-            numberOfMonths:3,
+            minDate:0
 	
         });
     });
