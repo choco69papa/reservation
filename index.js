@@ -3,9 +3,13 @@ $(function () {
     $(function () {
         $('input[name="date"]').datepicker({
             dateFormat: 'yy年mm月dd日',
+    // カレンダー
             minDate: 0
+    // カレンダー
             showOtherMonths: true
         });
+    });
+    // カレンダー
 $('.datepicker').datepicker({
 	beforeShowDay: function (date) {
           
@@ -19,7 +23,6 @@ $('.datepicker').datepicker({
     }
           
 });
-    });
 
     // 参加人数分の氏名欄を生成
     $('#form-number').click(function () {
