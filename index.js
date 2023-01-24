@@ -9,7 +9,7 @@ $(function () {
     // 参加人数分の氏名欄を生成
     $('#form-number').click(function () {
         $('#form-name').empty();
-        var num = $('select[name="number"]').val();
+        var num = $('[name="number"] option:selected').val();
         for (i = 0; i < num; i++) {
             $('#form-name').append(
                 `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
@@ -17,15 +17,7 @@ $(function () {
         }
     });
     
-    
-    
-    document.querySelector('select[name="number"]').form.
-    addEventLisetner('formdata', e => {
-  if (e.formData.get('number') == '')
-    e.formData.delete('number');
-});
 
-    
     
     // 送信
     $('form').submit(function () {
