@@ -6,7 +6,7 @@ $(function () {
             minDate: 0
         });
         $( "#datepicker" ).datepicker('option','beforeShowDay',function(date){
-    var ret = [(date.getDay() != 0 && date.getDay() != 6)];
+    var ret = [(date.getDay() != 1 && date.getDay() != 6)];
     return ret;
 });
     });
