@@ -12,7 +12,7 @@ $(function () {
         var num = $('input[name="number"]:checked').val();
         var minute = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
-        var inquiries = $('input[name="inquiries"]').val();
+        var inquiries = $('textarea[name="inquiries"]').val();
     });
 
     // 送信
