@@ -9,6 +9,7 @@ $(function () {
     // 参加人数分の氏名欄を生成
     $('#form-number').click(function () {
         $('#form-name').empty();
+        var date = $('input[name="date"]').val();
         var num = $('input[name="number"]:checked').val();
         var minute = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
