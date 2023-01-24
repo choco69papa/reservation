@@ -21,7 +21,7 @@ $(function () {
         var minute = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
 
-        var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}`;
+        var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}\nメニュー：${inquiries}`;
         sendText(msg);
 
         return false;
