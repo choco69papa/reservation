@@ -11,9 +11,6 @@ $(function () {
         $('#form-name').empty();
         var num = $('input[name="number"]:checked').val();
         for (i = 0; i < num; i++) {
-            $('#form-name').append(
-                `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
-            );
         }
     });
 
