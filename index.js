@@ -21,7 +21,7 @@ $(function () {
         var number = $('input[name="number"]:checked').val();
         var minute = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
-        var inquiries = $('input[name="inquiries"]').val();
+        var inquiries = $('textarea[name="inquiries"]').val();
 
         var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}\n問い合わせ内容：${inquiries}`;
         sendText(msg);
