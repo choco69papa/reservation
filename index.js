@@ -10,20 +10,7 @@ $(function () {
             showOtherMonths: true
         });
     });
-    // カレンダー
-$('.datepicker').datepicker({
-	beforeShowDay: function (date) {
-          
-        if (date.getDay() == 1) {
-            // 日曜日
-            return [false, 'ui-state-disabled'];
-        } else {
-            // 平日
-            return [true, ''];
-        }
-    }
-          
-});
+
 
     // 予約フォームを表示する
     $('#form-number').click(function () {
