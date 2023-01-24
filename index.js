@@ -4,11 +4,11 @@ $(function () {
         $('input[name="date"]').datepicker({
             dateFormat: 'yy/mm/dd',
             minDate: 0
-$( "#datepicker" ).datepicker('option','beforeShowDay',function(date){
+              }  
+  $( "#datepicker" ).datepicker('option','beforeShowDay',function(date){
     var ret = [(date.getDay() != 1 && date.getDay() != 6)];
     return ret;
-});
-              }  
+});                             
         });
     });
 
