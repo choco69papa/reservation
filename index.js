@@ -3,9 +3,6 @@ $(function () {
     $(function () {
         $('input[name="date"]').datepicker({
             dateFormat: 'yy/mm/dd',
-            minDate: 0
-              });  
-                       
         });
     });
 
