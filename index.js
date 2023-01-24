@@ -2,7 +2,7 @@ $(function () {
     // カレンダー
     $(function () {
         $('input[name="date"]').datepicker({
-            dateFormat: 'yy/年mm月dd日',
+            dateFormat: 'yy年mm月dd日',
         });
     });
 
