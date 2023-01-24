@@ -3,6 +3,7 @@ $(function () {
     $(function () {
         $('input[name="date"]').datepicker({
             dateFormat: 'yy年mm月dd日',
+            minDate: 0
         });
     });
 
