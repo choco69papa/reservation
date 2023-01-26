@@ -29,6 +29,7 @@ $(function () {
         var inquiries = $('textarea[name="inquiries"]').val();
 
         var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}\n問い合わせ内容：${inquiries}`;
+        var msg = `ありがとう`;
         sendText(msg);
 
         return false;
