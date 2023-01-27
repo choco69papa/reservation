@@ -32,5 +32,6 @@ $(function () {
         sendText(msg);
 
         return false;
+	       alert('送信しました！'); 
     });
 });
