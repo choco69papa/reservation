@@ -31,6 +31,6 @@ $(function () {
         var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}\n問い合わせ内容：${inquiries}`;
         sendText(msg);
 
-        node.send(msg,false);
+        return false;
     });
 });
