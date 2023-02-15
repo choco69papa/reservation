@@ -28,11 +28,11 @@ $(function () {
         var names = $('select[name="names"]').val();
         var inquiries = $('textarea[name="inquiries"]').val();
 
-        var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}`;
+        var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}\n問い合わせ内容：${inquiries}`;
         sendText(msg);
 	    
-        var inquiries = `問い合わせ内容：${inquiries}`;
-        sendText(inquiries);
+        var msg = `ご連絡が遅れる場合がございますが\n確認後に返信致します。`;
+        sendText(msg);
 
         return false;
     });
