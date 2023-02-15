@@ -30,6 +30,9 @@ $(function () {
 
         var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}\n問い合わせ内容：${inquiries}`;
         sendText(msg);
+	    
+        var msg = `あいうえお`;
+        sendText(msg);
 
         return false;
     });
