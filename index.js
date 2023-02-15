@@ -31,8 +31,8 @@ $(function () {
         var msg = `希望日：${date}\n時間：${minute}\nメニュー：${names}`;
         sendText(msg);
 	    
-        var msg = `問い合わせ内容：${inquiries}`;
-        sendText(msg);
+        var inquiries = `問い合わせ内容：${inquiries}`;
+        sendText(inquiries);
 
         return false;
     });
