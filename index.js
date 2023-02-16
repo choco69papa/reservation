@@ -23,12 +23,12 @@ $(function () {
     // 送信
     $('form').submit(function () {
         var date = $('input[name="date"]').val();
-        var number = $('input[name="number"]:checked').val();
+        var number = $('input[name="number"]:checked').val();	
         var minute = $('select[name="minute"]').val();
         var names = $('select[name="names"]').val();
         var inquiries = $('textarea[name="inquiries"]').val();
 	    
-        var msg = `＊＊＊ご予約内容＊＊＊\n\n希望日：<br>${date}\n\n時間：${minute}\n\nメニュー：<br>${names}\n\n問い合わせ内容：<br>${inquiries}`;
+        var msg = `＊＊＊ご予約内容＊＊＊\n\n希望日：\n?${date}\n\n時間：${minute}\n\nメニュー：\n?${names}\n\n問い合わせ内容：\n?${inquiries}`;
         sendText(msg);
 
         return false;
