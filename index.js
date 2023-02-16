@@ -36,12 +36,6 @@ $(function () {
 	
     // 送信
     $('form').submit(function () {
-        var date = $('input[name="date"]').val();
-        var number = $('input[name="number"]:checked').val();
-        var minute = $('select[name="minute"]').val();
-        var names = $('select[name="names"]').val();
-        var inquiries = $('textarea[name="inquiries"]').val();
-
 	var msg = `ご連絡が遅れる場合がございますが、\n確認後に返信致します。`;
         sendText(msg);
 
