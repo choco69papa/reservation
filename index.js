@@ -41,4 +41,11 @@ $(function () {
 
         return false;
     });
+    // 送信
+    $('form').submit(function () {
+	var abcd = `あいうえお　かきくけこ。`;
+        sendText(abcd);
+
+        return false;
+    });
 });
