@@ -41,4 +41,10 @@ $(function () {
 
         return false;
     });
+	
+    // 送信
+    setTimeout(function () {
+	console.log("実行するよ");
+    }, 2000);
+	
 });
