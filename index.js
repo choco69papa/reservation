@@ -43,13 +43,13 @@ $(function () {
     });
 	
     // 送信
-    $('form').submit(function () {
-	setTimeout(function () {
-	console.log("実行するよ");
-    }, 2000);
-        sendText(log);
+setTimeout("msg()", 3000);  
+
+function msg() {
+    console.log("呼ばれたよ");
+}
+        sendText(msg);
 
         return false;
-	    
-    });	
+
 });
